@@ -1,0 +1,1 @@
+﻿Get-MoveRequest | Get-MoveRequestStatistics | select DisplayName, StatusDetail, PercentComplete, BytesTransferred, AverageProcessingRate | sort PercentComplete -Descending
