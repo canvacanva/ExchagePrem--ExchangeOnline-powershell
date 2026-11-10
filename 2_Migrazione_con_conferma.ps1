@@ -2,7 +2,7 @@
 $Mail = "mattia.caneva@ciao.com"
 
 # Crea la richiesta (si fermerà al 95%)
-New-MoveRequest -Identity $Mail -Remote -RemoteHostName "posta.valoriscarl.it" -RemoteCredential (Get-Credential) -TargetDeliveryDomain "ValoriScarl.onmicrosoft.com" -SuspendWhenReadyToComplete
+New-MoveRequest -Identity $Mail -Remote -RemoteHostName "posta.teeeest.mail" -RemoteCredential (Get-Credential) -TargetDeliveryDomain "ValoriScarl.onmicrosoft.com" -SuspendWhenReadyToComplete
 
 # Monitoraggio specifico per questa mailbox
 Get-MoveRequestStatistics -Identity $Mail | select DisplayName, StatusDetail, PercentComplete, BytesTransferred
